@@ -64,7 +64,9 @@ A sessão do usuário também é controlada no Front-end através do `localStora
 
 ## 🎥 Demonstração
 
-Atualmente, o projeto **não está hospedado**, então não é possível testar as funcionalidades diretamente pelo navegador.
+Atualmente, o backend do projeto **não está hospedado**, então não é possível testar todas as funcionalidades diretamente pelo navegador.
+
+⚡Link para demonstração do front: **https://gustavoloiola.github.io/projeto-cadastro/**
 
 Para solucionar isso, preparei um **vídeo demonstrativo** mostrando a aplicação funcionando na prática, incluindo:
 
