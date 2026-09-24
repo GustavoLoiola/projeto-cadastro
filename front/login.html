@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entrar</title>
+<link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="eyebrow">Conta · Acesso</span>
+      <h1>Entrar</h1>
+      <p class="subtitle">Informe seu e-mail e senha para acessar sua conta.</p>
+    </div>
+
+    <form id="loginForm" novalidate>
+
+      <div id="formBanner" class="banner"></div>
+
+      <div class="field" data-field="email">
+        <label for="email">E-mail<span class="required-mark">*</span></label>
+        <div class="input-wrap">
+          <input type="email" id="email" name="email" placeholder="voce@exemplo.com" autocomplete="email">
+        </div>
+        <span class="error-msg"></span>
+      </div>
+
+      <div class="field" data-field="senha">
+        <div class="field-label-row">
+          <label for="senha">Senha<span class="required-mark">*</span></label>
+          <button type="button" class="forgot-link" id="forgotBtn">Esqueci a senha</button>
+        </div>
+        <div class="input-wrap password-field">
+          <input type="password" id="senha" name="senha" placeholder="Sua senha" autocomplete="current-password">
+          <button type="button" class="toggle-visibility" data-target="senha">MOSTRAR</button>
+        </div>
+        <span class="error-msg"></span>
+      </div>
+
+      <button type="submit">Entrar</button>
+
+      <p class="form-footer">Não tem uma conta? <a href="register.html">Criar conta</a></p>
+    </form>
+  </div>
+
+  <div class="modal-overlay" id="forgotOverlay">
+    <div class="modal">
+      <h2>Recuperar senha</h2>
+      <p>Informe o e-mail da sua conta. Se ele estiver cadastrado, enviaremos um link para redefinir sua senha.</p>
+
+      <div class="field" data-field="recoveryEmail">
+        <label for="recoveryEmail">E-mail</label>
+        <div class="input-wrap">
+          <input type="email" id="recoveryEmail" placeholder="voce@exemplo.com">
+        </div>
+        <span class="error-msg"></span>
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" class="btn-secondary" id="forgotCancel">Cancelar</button>
+        <button type="button" class="btn-primary" id="forgotSend">Enviar link</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/login.js"></script>
+</body>
+</html>

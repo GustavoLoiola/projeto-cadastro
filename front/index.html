@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel de produtos</title>
+<link rel="stylesheet" href="styles/default.css">
+</head>
+<body class="page-main">
+
+<div class="shell">
+
+  <div class="shell-header">
+    <div>
+      <span class="eyebrow">Estoque · Painel</span>
+      <h1>O que você deseja fazer?</h1>
+      <p class="subtitle">Escolha uma opção para gerenciar o catálogo de produtos.</p>
+    </div>
+    <div class="session-box">
+      <p class="session-user" id="sessionUser"></p>
+      <button type="button" class="logout-link" id="logoutBtn">Sair</button>
+    </div>
+  </div>
+
+  <div class="option-grid">
+    <a class="option-card" href="create.html">
+      <div class="option-icon">+</div>
+      <div class="option-title">Cadastrar</div>
+      <div class="option-desc">Adicionar um novo produto ao catálogo.</div>
+    </a>
+
+    <a class="option-card" href="list.html">
+      <div class="option-icon">☰</div>
+      <div class="option-title">Listar</div>
+      <div class="option-desc">Ver todos os produtos cadastrados.</div>
+    </a>
+
+    <a class="option-card" href="edit.html">
+      <div class="option-icon">✎</div>
+      <div class="option-title">Editar por ID</div>
+      <div class="option-desc">Buscar um produto pelo ID e atualizar seus dados.</div>
+    </a>
+
+    <a class="option-card" href="remove.html">
+      <div class="option-icon">×</div>
+      <div class="option-title">Excluir por ID</div>
+      <div class="option-desc">Buscar um produto pelo ID e removê-lo.</div>
+    </a>
+  </div>
+
+</div>
+
+<script src="scripts/index.js"></script>
+</body>
+</html>

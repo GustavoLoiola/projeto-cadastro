@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Excluir produto</title>
+<link rel="stylesheet" href="styles/default.css">
+</head>
+<body class="page-excluir">
+
+<div class="shell">
+  <a class="back-link" href="index.html">&larr; Voltar ao painel</a>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="eyebrow">Estoque · Exclusão</span>
+      <h1>Excluir produto</h1>
+      <p class="subtitle">Informe o ID para localizar e remover o produto do catálogo.</p>
+    </div>
+
+    <div class="card-body">
+      <div id="excluirBanner" class="banner"></div>
+
+      <div class="inline-form">
+        <div class="field">
+          <label for="excluirId">ID do produto</label>
+          <input type="number" id="excluirId" placeholder="Ex.: 1" min="1">
+        </div>
+        <button type="button" class="btn btn-primary" id="btnBuscar">Buscar</button>
+      </div>
+
+      <div class="found-card" id="excluirCard">
+        <div class="name" id="excluirNome"></div>
+        <div class="meta" id="excluirMeta"></div>
+        <button type="button" class="btn btn-danger btn-block" id="btnConfirmarExclusao">Excluir produto</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="scripts/remove.js"></script>
+</body>
+</html>

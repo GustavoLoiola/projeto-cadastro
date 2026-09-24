@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editar produto</title>
+<link rel="stylesheet" href="styles/default.css">
+</head>
+<body class="page-editar">
+
+<div class="shell">
+  <a class="back-link" href="index.html">&larr; Voltar ao painel</a>
+
+  <div class="card">
+    <div class="card-header">
+      <span class="eyebrow">Estoque · Edição</span>
+      <h1>Editar produto</h1>
+      <p class="subtitle">Informe o ID para carregar os dados atuais do produto.</p>
+    </div>
+
+    <div class="card-body">
+      <div id="editarBanner" class="banner"></div>
+
+      <div class="inline-form">
+        <div class="field">
+          <label for="editarId">ID do produto</label>
+          <input type="number" id="editarId" placeholder="Ex.: 1" min="1">
+        </div>
+        <button type="button" class="btn btn-primary" id="btnBuscar">Buscar</button>
+      </div>
+
+      <div class="edit-section" id="editarForm">
+        <div class="edit-grid">
+          <div class="field full">
+            <label for="editNome">Nome do produto</label>
+            <input type="text" id="editNome" placeholder="Nome do produto">
+          </div>
+          <div class="field full">
+            <label for="editDescricao">Descrição</label>
+            <input type="text" id="editDescricao" placeholder="Descrição (opcional)">
+          </div>
+          <div class="field">
+            <label for="editPreco">Preço</label>
+            <input type="number" id="editPreco" step="0.01" min="0" placeholder="0,00">
+          </div>
+          <div class="field">
+            <label for="editQuantidade">Quantidade</label>
+            <input type="number" id="editQuantidade" step="1" min="0" placeholder="0">
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary btn-block" id="btnSalvar" style="margin-top:18px;">Salvar alterações</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="scripts/edit.js"></script>
+</body>
+</html>
