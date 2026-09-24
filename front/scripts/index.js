@@ -10,5 +10,5 @@ if (username) {
 document.getElementById('logoutBtn').addEventListener('click', () => {
   localStorage.removeItem('token');
   localStorage.removeItem('name');
-  window.location.href = 'login.html';
+  window.location.href = 'index.html';
 });

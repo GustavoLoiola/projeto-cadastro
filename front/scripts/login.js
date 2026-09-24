@@ -100,7 +100,7 @@ form.addEventListener('submit', async function (e) {
     banner.classList.add('show', 'success');
 
     setTimeout(() => {
-      window.location.href = 'index.html';
+      window.location.href = 'home.html';
     }, 1000);
 
   } 
